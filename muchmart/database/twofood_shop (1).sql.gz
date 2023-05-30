@@ -1,0 +1,224 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 18, 2022 at 06:24 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `twofood_shop`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_category`
+--
+
+CREATE TABLE `db_category` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `db_category`
+--
+
+INSERT INTO `db_category` (`id`, `name`) VALUES
+(1, 'Bún-Phở'),
+(2, 'Cơm tấm'),
+(3, 'gà rán'),
+(4, 'Thức uống');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_customer`
+--
+
+CREATE TABLE `db_customer` (
+  `id` int(11) NOT NULL,
+  `fullname` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `username` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `address` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
+  `email` varchar(50) CHARACTER SET utf8 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `db_customer`
+--
+
+INSERT INTO `db_customer` (`id`, `fullname`, `username`, `password`, `address`, `email`) VALUES
+(1, 'Lưu Yến Vy', 'yenvy74', '81dc9bdb52d04dc20036dbd8313ed055', ' ', 'UIT@gmail.com'),
+(2, 'Lưu Yến Vy', 'yenvy74', '81dc9bdb52d04dc20036dbd8313ed055', ' ', 'UIT@gmail.com'),
+(3, 'Lưu Yến Vy', 'yenvy74', '1234', ' ', 'UIT@gmail.com'),
+(4, 'Lưu Yến Vy', 'yenvy75', '1234', ' ', '20522180@gm.uit.edu.vn');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_order`
+--
+
+CREATE TABLE `db_order` (
+  `id` int(11) NOT NULL,
+  `customerid` int(11) NOT NULL,
+  `orderdate` datetime NOT NULL DEFAULT current_timestamp(),
+  `fullname` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `phone` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `money` int(12) NOT NULL,
+  `price_ship` int(11) NOT NULL DEFAULT 100000,
+  `address` varchar(255) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `db_order`
+--
+
+INSERT INTO `db_order` (`id`, `customerid`, `orderdate`, `fullname`, `phone`, `money`, `price_ship`, `address`) VALUES
+(2, 4, '2022-06-18 21:12:50', 'yen vy', '0935434224', 70000, 100000, 'HCM');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_orderdetail`
+--
+
+CREATE TABLE `db_orderdetail` (
+  `id` int(11) NOT NULL,
+  `orderid` int(11) NOT NULL,
+  `productid` int(11) NOT NULL,
+  `count` int(10) NOT NULL,
+  `price` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `db_orderdetail`
+--
+
+INSERT INTO `db_orderdetail` (`id`, `orderid`, `productid`, `count`, `price`) VALUES
+(1, 2, 2, 2, 70000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_producer`
+--
+
+CREATE TABLE `db_producer` (
+  `id` int(10) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_product`
+--
+
+CREATE TABLE `db_product` (
+  `id` int(11) NOT NULL,
+  `catid` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `img` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `detail` text CHARACTER SET utf8 NOT NULL,
+  `number` int(11) NOT NULL,
+  `price` int(11) NOT NULL,
+  `price_sale` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `db_product`
+--
+
+INSERT INTO `db_product` (`id`, `catid`, `name`, `img`, `detail`, `number`, `price`, `price_sale`) VALUES
+(2, 1, 'Phở gà', 'assets/img/phoga.png', 'Phở gà được hầm trong nhiều giờ, thơm ngon hấp dẫn.', 10, 25000, 35000),
+(4, 1, 'bún mọc', 'assets/img/bunmoc.png', 'Bún mọc ngon, hấp dẫn', 10, 30000, 40000),
+(5, 2, 'Cơm tấm sườn', 'assets/img/comtamsuon.png', 'cơm tấm ngon', 10, 20000, 25000),
+(6, 2, 'Cơm tấm đầy đủ', 'assets/img/comtamdaydu.png', 'cơm tấm đầy đủ ăn no nê', 10, 30000, 35000),
+(7, 2, 'Cơm gà', 'assets/img/comga.png', 'Cơm gà ngon, hấp dẫn', 10, 18000, 20000),
+(8, 3, 'đùi gà rán', 'assets/img/duiga.png', 'đùi gà rán giòn hấp dẫn', 10, 15000, 20000),
+(9, 3, 'Má đùi gà rán', 'assets/img/maduiga.png', 'má đùi gà thơm phức', 10, 13000, 17000),
+(10, 3, 'cánh gà', 'assets/img/canhga.png', 'cánh gà giòn tan', 10, 16000, 17000),
+(11, 4, 'Nước ép ổi', 'assets/img/nuocepoi.png', 'Nước ép ổi thanh mát', 10, 9000, 12000),
+(12, 4, 'Nước ép thơm', 'assets/img/nuocepthom.png', 'Nước ép thơm mát mùa hè', 10, 10000, 13000),
+(13, 4, 'Nước ép cam', 'assets/img/nuocepcam.png', 'Nước ép cam tươi mát', 10, 8000, 10000),
+(14, 4, 'Nước ép lựu', 'assets/img/nuocepluu.png', 'Nước ép tươi mát cho mùa hè', 10, 12000, 15000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_user`
+--
+
+CREATE TABLE `db_user` (
+  `id` int(11) NOT NULL,
+  `fullname` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `username` varchar(225) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(64) CHARACTER SET utf8 NOT NULL,
+  `phone` varchar(15) CHARACTER SET utf8 NOT NULL,
+  `address` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `db_user`
+--
+
+INSERT INTO `db_user` (`id`, `fullname`, `username`, `password`, `phone`, `address`) VALUES
+(1, 'Lưu Yến Vy', 'yenvy74', '1234', '0926325310', ' '),
+(2, 'Lưu Yến Vy', 'yenvy75', '1234', '09243422', ' ');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `db_category`
+--
+ALTER TABLE `db_category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `db_customer`
+--
+ALTER TABLE `db_customer`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `db_order`
+--
+ALTER TABLE `db_order`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `customerid` (`customerid`);
+
+--
+-- Indexes for table `db_orderdetail`
+--
+ALTER TABLE `db_orderdetail`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `productid` (`productid`),
+  ADD KEY `orderid` (`orderid`);
+
+--
+-- Indexes for table `db_producer`
+--
+ALTER TABLE `db_producer`
+  ADD PRIMARY KEY (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
