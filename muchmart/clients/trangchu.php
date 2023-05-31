@@ -65,7 +65,7 @@ if (!isset($_COOKIE["username"])){
         <div id="banner">
             <div class="box-left">
                 <h2>
-                    <span>THỨC ĂN</span>
+                    <span>THỨC ĂN</span>   
                     <br>
                     <span>THƯỢNG HẠNG</span>
                 </h2>

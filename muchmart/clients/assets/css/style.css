@@ -14,11 +14,14 @@
 }
 #header {
     width: 100%;
-    padding:0px 30px;
-    margin-top:33px;
+    padding:0 30px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;    
+    background-color:#faebd7;
+    border-radius: 10px;
+
 }
 .logo img{
     width: 100px;
@@ -62,6 +65,7 @@
 
 #banner .box-left ,#banner .box-right {
     width: 50%;
+    background-image :url("/web/assets/banner.png");
 }
 
 #banner  .box-left h2 {
@@ -661,10 +665,12 @@ body {
     display: block;
 }
 .hero__categories__all {
-    background: #309eba;
+    background: #faebd7;
     position: relative;
     padding: 10px 25px 10px 40px;
     cursor: pointer;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .hero__categories {
     margin-bottom: 30px;
@@ -674,6 +680,8 @@ body {
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 12px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 ul, ol {
     padding: 0;
@@ -681,6 +689,7 @@ ul, ol {
 }
 .hero__categories ul li {
     list-style: none;
+
 }
 li {
     display: list-item;
