@@ -39,7 +39,7 @@
     </script>
     <div id="header">
         <a href="" class="logo">
-            <img src="assets/img/TWO FOOD.png" alt="">
+            <img src="assets/img/logo.png" alt="">
         </a>
         <div id="menu">
             <div class="item">
@@ -91,7 +91,7 @@
                     </div>
                     <div class="auth-form__aside">
                         <p class="auth-form__policy-text">
-                            Bằng việc đăng kí, bạn đã đồng ý với TWO FOOD về
+                            Bằng việc đăng kí, bạn đã đồng ý với Much Mart về
                             <a href="" class="auth-form__policy-text-link">Điều khoản dịch vụ</a> &
                             <a href="" class="auth-form__policy-text-link">Chính sách bảo mật</a>
                         </p>
@@ -125,7 +125,7 @@
             <div id="footer">
                 <div class="box">
                     <div class="logo">
-                        <img src="assets/img/TWO FOOD.png" alt="">
+                        <img src="assets/img/logo.png" alt="">
                     </div>
                     <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
                 </div>

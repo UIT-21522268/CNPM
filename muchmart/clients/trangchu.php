@@ -35,7 +35,7 @@ if (!isset($_COOKIE["username"])){
      <div id="wrapper">
         <div id="header">
             <a href="/index.html" class="logo">
-                <img src="assets/img/TWOFOOD.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </a>
             <div id="menu">
                 <div class="item">
@@ -223,11 +223,7 @@ if (!isset($_COOKIE["username"])){
                         <div class="name">Nguyễn Đình Vũ</div>
 
                         <div class="text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type
-                                specimen book.</p>
+                            <p style="color:black;text-align:center;">Tôi đã rất hài lòng về các sản phẩm mà bạn mang lại. Tôi sẽ tiếp tục mua ăn từ cửa hàng của bạn trong tương lai.</p>
                         </div>
                     </li>
                     <li class="item">
@@ -306,7 +302,7 @@ if (!isset($_COOKIE["username"])){
         <div id="footer">
             <div class="box">
                 <div class="logo">
-                    <img src="assets/img/TWO FOOD.png" alt="">
+                    <img src="assets/img/logo.png" alt="">
                 </div>
                 <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
             </div>
@@ -314,7 +310,7 @@ if (!isset($_COOKIE["username"])){
                 <h3>NỘI DUNG</h3>
                 <ul class="quick-menu">
                     <div class="item">
-                        <a href="/trangchu.html">Trang chủ</a>
+                        <a href="./trangchu.php">Trang chủ</a>
                     </div>
                     <div class="item">
                         <a href="/sanpham1.html">Sản phẩm</a>

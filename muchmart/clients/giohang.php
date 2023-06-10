@@ -25,7 +25,7 @@ if (!isset($_COOKIE['username'])){
     <div id="wrapper">
         <div id="header">
             <a href="/index.html" class="logo">
-                <img src="assets/img/TWOFOOD.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </a>
             <div id="menu">
                 <div class="item">
@@ -160,7 +160,7 @@ if (!isset($_COOKIE['username'])){
     <div id="footer">
         <div class="box">
             <div class="logo">
-                <img src="assets/img/TWOFOOD.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </div>
             <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
         </div>

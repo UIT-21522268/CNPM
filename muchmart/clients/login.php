@@ -31,7 +31,7 @@
     </script>
     <div id="header">
         <a href="" class="logo">
-            <img src="assets/img/TWOFOOD.png" alt="">
+            <img src="assets/img/logo.png" alt="">
         </a>
         <div id="menu">
             <div class="item">
@@ -95,13 +95,13 @@
                                 SMS
                             </span> 
                         </a>
-                        <a href="" class="auth-form__social--facebook btn btn--size-s btn--with-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100040221697126" class="auth-form__social--facebook btn btn--size-s btn--with-icon">
                             <i class="auth-form__social-icon fa-brands fa-facebook-square"></i>
                             <span class="auth-form__social-title">
                                 Facebook
                             </span> 
                         </a>
-                        <a href="" class="auth-form__social--google btn btn--size-s btn--with-icon">
+                        <a href="21522268@gm.uit.edu.vn" class="auth-form__social--google btn btn--size-s btn--with-icon">
                             <i class="auth-form__social-icon fa-brands fa-brands fa-google-plus-g"></i>
                             <span class="auth-form__social-title">
                                 Google
@@ -114,7 +114,7 @@
         <div id="footer">
             <div class="box">
                 <div class="logo">
-                    <img src="assets/img/TWOFOOD.png" alt="">
+                    <img src="assets/img/logo.png" alt="">
                 </div>
                 <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
             </div>

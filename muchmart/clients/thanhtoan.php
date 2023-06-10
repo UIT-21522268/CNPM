@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWO FOOD </title>
+    <title>Much Mart </title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
@@ -16,11 +16,11 @@
     <div id="wrapper">
         <div id="header">
             <a href="/index.html" class="logo">
-                <img src="assets/img/TWOFOOD.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </a>
             <div id="menu">
                 <div class="item">
-                    <a href="/index.html">Trang chủ</a>
+                    <a href="./trangchu.php">Trang chủ</a>
                 </div>
                 <div class="item">
                     <a href="/sanpham1.html">Sản phẩm</a>
@@ -47,7 +47,7 @@
         
         
           
-            <p>Thông tin thanh toán và giao hàng</p>
+            <p style="text-align:center;font-size:xx-large;padding:20px;">Thông tin thanh toán và giao hàng</p>
             <table width=70% id='thanhtoan' name='thanhtoan' align="center">
             <form method='post' action='xulythanhtoan.php' width=70%>
             
@@ -76,7 +76,7 @@
         <div id="footer">
             <div class="box">
                 <div class="logo">
-                    <img src="assets/img/TWOFOOD.png" alt="">
+                    <img src="assets/img/logo.png" alt="">
                 </div>
                 <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
             </div>
