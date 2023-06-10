@@ -184,7 +184,9 @@ if (!isset($_COOKIE["username"])){
                     <span>45%</span>
                 </h1>
             </div>
-            <div class="box-right"></div>
+            <div class="box-right">
+                <img src="assets/off.jpeg" alt="">
+            </div>
         </div>
 
         <div id="comment">

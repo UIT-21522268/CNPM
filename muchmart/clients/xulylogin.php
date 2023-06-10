@@ -15,7 +15,7 @@
     $sql ="select * from db_customer where username ='$username' and password='$password'";
     $result=$connect -> query($sql);                      
   if($result->num_rows > 0){
-    echo "đăng nhập thành công";
+    echo "Đăng nhập thành công";
     setcookie("username", $username,  time() + 3600);
     header("location:trangchu.php?page=login");
     }

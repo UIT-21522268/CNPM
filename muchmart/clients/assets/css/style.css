@@ -170,7 +170,7 @@
 #list-products .item {
     width: 290px;
     height: 374px;
-    background:#c6c249ad;
+    background:#faebd7;
     border-radius: 10px;
     margin-bottom: 50px;
 }
@@ -266,8 +266,9 @@
     font-size:128px;
 }
 
-#saleoff .box-right {
-    background-image:url("/web/assets/off.jpg");
+#saleoff .box-right .img{
+    min-height: 322px;
+    width: 780px;
 }
 
 
@@ -584,7 +585,6 @@ body {
       margin: 20px 20px 20% 20px;
       color:tomato;
       font-size: 4rem;
-      background-color: rgb(249, 246, 246);
       width: 100%;
       margin-left: 0;
       border-radius: 5px;
@@ -851,7 +851,7 @@ h5 {
 .shoping__checkout .primary-btn {
     display: block;
     text-align: center;
-    background: #2d7c9b;
+    color:red;
 }
 #thanhtoan{
     margin-right: 200px;
