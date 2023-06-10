@@ -126,7 +126,6 @@ html{
 #header {
     width: 100%;
     padding:0px 30px;
-    margin-top:33px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -180,7 +179,7 @@ html{
     margin: 40px 30% ;
 }
 .auth-form__container{
-    
+    border: 1px solid #b1154a;
     margin:0 32px;  
 }/* header thẻ đăng kí*/
 .auth-form__header{

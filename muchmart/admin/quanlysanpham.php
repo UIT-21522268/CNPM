@@ -28,7 +28,7 @@ if (!isset($_COOKIE["id"])){
     <div id="wrapper">
         <div id="header">
             <a href="/index.html" class="logo">
-                <img src="assets/img/TWOFOOD.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </a>
             <div id="menu">
                 <div class="item">

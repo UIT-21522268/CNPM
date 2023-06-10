@@ -126,11 +126,11 @@ html{
 #header {
     width: 100%;
     padding:0px 30px;
-    margin-top:33px;
     display: flex;
     justify-content: space-between;
     align-items: center;   
-
+    border-radius: 20px;
+    background-color:antiquewhite;
 }
 .logo img{
     width: 100px;
@@ -181,8 +181,9 @@ html{
     margin: 40px 30% ;
 }
 .auth-form__container{
-    
     margin:0 32px;  
+    border: 1px solid #b1154a;
+    padding:20px;
 }/* header thẻ đăng kí*/
 .auth-form__header{
     display: flex;
@@ -193,6 +194,7 @@ html{
     font-size: 2rem;
     font-weight: 500;
     color:var(--text-color);
+    text-decoration-line:none;
 }/* nút đn*/
 .auth-form__switch-btn{
     font-size: 1.6rem;
@@ -209,7 +211,7 @@ html{
     margin-top: 16px;
     padding: 0 12px;
     font-size: 1.4rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid antiquewhite;
     border-radius: 2px;
     outline: none;
 

@@ -126,10 +126,10 @@ html{
 #header {
     width: 100%;
     padding:0px 30px;
-    margin-top:33px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
+    background-color: antiquewhite;
 }
 .logo img{
     width: 100px;

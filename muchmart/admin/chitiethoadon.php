@@ -10,7 +10,7 @@ if (isset($_COOKIE['$id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWO FOOD </title>
+    <title>Much Mart </title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
@@ -21,7 +21,7 @@ if (isset($_COOKIE['$id'])){
     <div id="wrapper">
         <div id="header">
             <a href="/index.html" class="logo">
-                <img src="assets/img/TWOFOOD.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </a>
             <div id="menu">
                 <div class="item">

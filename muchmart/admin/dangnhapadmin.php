@@ -31,7 +31,7 @@
     </script>
     <div id="header">
         <a href="" class="logo">
-            <img src="/assets/img/TWO FOOD.png" alt="">
+            <img src="/assets/img/logo.png" alt="">
         </a>
         <div id="menu">
             <div class="item">
@@ -114,7 +114,7 @@
         <div id="footer">
             <div class="box">
                 <div class="logo">
-                    <img src="/assets/img/TWO FOOD.png" alt="">
+                    <img src="assets/img/logo.png" alt="">
                 </div>
                 <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
             </div>
